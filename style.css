@@ -49,7 +49,7 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
-    font-size: small;
+    font-size:12px;
 }
 
 nav ul li a {
@@ -146,8 +146,8 @@ main {
 }
 
 .image-container {
-    max-width: 90%;
-    padding:  30px;
+    max-width: 100%;
+    padding:  20px;
 }
 
 .image-container img {
@@ -185,7 +185,8 @@ main {
 }
 
 .feedback {
-    padding: 50px 50px;
+    
+    padding: 10px 10px;
     background-color: rgb(255, 255, 255); /* Updated background color */
     color: #fff; /* Text color for feedback section */
 
@@ -203,8 +204,9 @@ main {
 }
 
 .feedback-item {
+    max-width: 100%;
     background-color: #fff; /* Light background for FAQ items */
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -260,7 +262,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.542);
-   max-width: 35%;
+   max-width: 30%;
     margin-bottom: 20px;
 }
 
