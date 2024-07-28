@@ -44,11 +44,12 @@ nav ul {
     list-style: none;
     display: flex;
     margin: 0;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 nav ul li {
     margin-left: 20px;
+    font-size: small;
 }
 
 nav ul li a {
@@ -259,7 +260,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.542);
-   max-width: 40%;
+   max-width: 35%;
     margin-bottom: 20px;
 }
 
