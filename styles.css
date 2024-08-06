@@ -1,0 +1,292 @@
+/* General Styles */
+* {
+                         margin: 0;
+                         padding: 0;
+                         box-sizing: border-box;
+                     }
+                     
+                     body {
+                         font-family: 'Roboto', sans-serif;
+                         color: #333; /* Dark text for better readability */
+                         background-color: #f7f7f7;
+                     }
+                     
+                     /* Navbar */
+                     .navbar {
+                         background-color: #45594b !important; /* Custom navbar background color */
+                         color: #ffffff !important; /* Ensure navbar text is white */
+                         padding: 1rem 0;
+                         z-index: 1000;
+                     }
+                     
+                     .navbar .navbar-brand {
+                         font-size: 2rem;
+                         font-weight: 700;
+                         color: #ffffff !important; /* White text for brand */
+                     }
+                     
+                     .navbar-nav .nav-link {
+                         color: #ffffff !important; /* White text for navbar links */
+                         font-size: 1.1rem;
+                         transition: color 0.3s;
+                     }
+                     
+                     .navbar-nav .nav-link:hover {
+                         color: #d9e2dd !important; /* Light grey for hover effect */
+                     }
+                     
+                    /* Hero Section */
+                    .hero {
+                         position: relative; /* Needed for positioning the overlay */
+                         background: url('bg.jpg') no-repeat center center/cover;
+                         height: 100vh;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         text-align: center;
+                         color: #ffffff; /* Ensure text color is white for visibility */
+                         overflow: hidden; /* Ensure the overlay doesn’t exceed the hero section */
+                     }
+                     
+                     .hero::before {
+                         content: ""; /* Necessary for pseudo-elements */
+                         position: absolute;
+                         top: 0;
+                         left: 0;
+                         width: 100%;
+                         height: 100%;
+                         background: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+                         z-index: 1; /* Position overlay below the content */
+                     }
+                     
+                     .hero .hero-content {
+                         position: relative; /* Ensure content appears above the overlay */
+                         z-index: 2; /* Bring content above the overlay */
+                     }
+                     
+                     
+                     .hero h1 {
+                         font-size: 4rem;
+                         margin-bottom: 1rem;
+                         font-weight: 700;
+                         color: #ffffff; /* White text for hero headline */
+                         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better visibility */
+                     }
+                     
+                     .hero p {
+                         font-size: 1.5rem;
+                         margin-bottom: 2rem;
+                         color: #ffffff; /* White text for hero paragraph */
+                         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Add shadow for better visibility */
+                     }
+                     
+                     
+                     .hero .btn {
+                         font-size: 1.2rem;
+                         padding: 10px 30px;
+                         background-color: #45594b !important; /* Custom button background color */
+                         color: #ffffff !important; /* White text for button */
+                         border: none;
+                         cursor: pointer;
+                         transition: background-color 0.3s, transform 0.3s;
+                     }
+                     
+                     .hero .btn:hover {
+                         background-color: #3a5a2f !important; /* Darker shade for button hover */
+                         transform: scale(1.05);
+                     }
+
+                     /* Gallery Section */
+.gallery {
+                         background-color: #ffffff; /* White background for gallery section */
+                         padding: 5rem 0;
+                     }
+                     
+                     .gallery .gallery-item {
+                         border-radius: 15px;
+                         overflow: hidden;
+                         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                         transition: transform 0.3s, box-shadow 0.3s;
+                     }
+                     
+                     .gallery .gallery-item img {
+                         width: 100%;
+                         height: auto;
+                         display: block;
+                     }
+                     
+                     .gallery .gallery-item:hover {
+                         transform: scale(1.05);
+                         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+                     }
+                     
+                     .gallery h2 {
+                         font-size: 2.5rem;
+                         color: #45594b; /* Text color for the gallery section heading */
+                     }
+                     
+                     @media (max-width: 768px) {
+                         .gallery h2 {
+                             font-size: 2rem;
+                         }
+                     }
+                     
+                     
+                     
+                     /* Products Section */
+                     .products {
+                         padding: 5rem 0;
+                         background-color: #ffffff; /* White background for products section */
+                     }
+                     
+                     .products .card {
+                         position: relative; /* Needed for positioning the overlay */
+                         overflow: hidden; /* Hide any overflow */
+                     }
+                     
+                     
+                     
+                     
+                     
+                     .products .card-body {
+                         padding: 2rem;
+                         text-align: center;
+                     }
+                     
+                     .products .card-title {
+                         font-size: 1.5rem;
+                         margin-bottom: 0.5rem;
+                         color: #45594b; /* Text color matches navbar for consistency */
+                     }
+                     
+                     .products .card-text {
+                         font-size: 1.2rem;
+                         color: #45594b; /* Main theme color for product prices */
+                     }
+                     
+                     .products .card-description {
+                         font-size: 1rem;
+                         color: #666; /* Slightly lighter color for descriptions */
+                     }
+                     
+                     .products .card:hover {
+                         transform: scale(1.05);
+                         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+                     }
+                     
+                     /* Feedback Section */
+                     .feedback {
+                         background-color: #f9f9f9; /* Light background for feedback section */
+                         padding: 5rem 0;
+                     }
+                     
+                     .feedback-card {
+                         border-radius: 15px;
+                         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                         padding: 2rem;
+                         text-align: center;
+                         background-color: #ffffff; /* White background for feedback cards */
+                     }
+                     
+                     .feedback-text {
+                         font-size: 1.2rem;
+                         margin-bottom: 1rem;
+                         color: #333; /* Dark text for readability */
+                     }
+                     
+                     .feedback-author {
+                         font-weight: bold;
+                         color: #45594b; /* Match the text color to the theme */
+                     }
+                     
+                     /* Contact Section */
+                     .contact {
+                         padding: 5rem 0;
+                         background-color: #ffffff; /* White background for contact section */
+                     }
+                     
+                     .contact-info {
+                         background-color: #f4f4f4; /* Light grey background for contact info */
+                         padding: 2rem;
+                         border-radius: 15px;
+                         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                     }
+                     
+                     .contact-info h3 {
+                         margin-bottom: 1rem;
+                         color: #45594b; /* Darker green for contact info heading */
+                     }
+                     
+                     .contact-info p {
+                         font-size: 1.1rem;
+                         color: #333; /* Dark text for contact information */
+                     }
+                     
+                     .social-media {
+                         display: flex;
+                         gap: 15px;
+                         margin-top: 1rem;
+                     }
+                     
+                     .social-icon img {
+                         width: 40px;
+                         height: 40px;
+                         transition: transform 0.3s;
+                     }
+                     
+                     .social-icon img:hover {
+                         transform: scale(1.1);
+                     }
+                     
+                     /* Footer */
+                     .footer {
+                         background-color: #45594b; /* Custom footer background color */
+                         color: #ffffff; /* White text for footer */
+                         
+                         text-align: center;
+                         padding: 10px ;
+                     }
+
+                     
+                     /* Buttons */
+                     .btn-primary {
+                         background-color: #45594b !important; /* Custom button background color */
+                         color: #ffffff !important; /* White text for buttons */
+                     }
+                     
+                     .btn-primary:hover {
+                         background-color: #3a5a2f !important; /* Darker shade for button hover */
+                     }
+                     
+                     /* Animations */
+                     @keyframes fadeIn {
+                         from {
+                             opacity: 0;
+                         }
+                         to {
+                             opacity: 1;
+                         }
+                     }
+                     
+                     @media (max-width: 768px) {
+                         .hero h1 {
+                             font-size: 2.5rem;
+                         }
+                     
+                         .hero p {
+                             font-size: 1rem;
+                         }
+                         
+                         .products .card {
+                             margin-bottom: 1.5rem;
+                         }
+                     }
+                     /* styles.css */
+
+/* Add padding to the navbar in mobile view */
+@media (max-width: 767.98px) {
+                         .navbar {
+                             padding: 10px 15px; /* Adjust padding as needed */
+                         }
+                     }
+                     
