@@ -3,225 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crafts 'N Hand</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Crafts 'n Hand</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Crafts' N Hand Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home" class="pop-up">HOME</a></li>
-                <li><a href="#products" class="pop-up">PRODUCT & SERVICES</a></li>
-                <li><a href="#contacts" class="pop-up">CONTACTS</a></li>
-                <li><a href="#faq" class="pop-up">FAQ</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                         <a class="navbar-brand" href="#">
+                         <img src="logo.png" alt="Crafts 'n Hand Logo" style="height: 50px;">
+                         </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feedback">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <div class="hero" id="home">
-        <div class="hero-content">
-            <h1 class="slide-up">Welcome to Crafts 'N Hand</h1>
-            <p class="slide-up">Your one stop craft shop. It’s all made with love.</p>
-            <button id="inquire-btn">INQUIRE</button>
-        </div>
-    </div>
-<hr>
-    <main>
-        <div class="content">
-            <h2 class="slide-up">CRAFTS 'N HAND</h2>
-            <p class="slide-up">zahk sgfadagajg dasdjg sajsgajd gasjgdagajsgj asgjfasga sgfjgasjajsgfg fjhxdgxbkashdngdsbsdgac</p>
-            <p class="tagline slide-up">Your one stop craft shop.<br>It’s all made with love.</p>
-        </div>
-        <div class="image-container">
-            <img src="logo.png" alt="Craft Image" class="image">
-        </div>
-    </main>
+    <section class="hero">
+                         <div id="home" class="hero-content">
+                             <h1>Welcome to Crafts 'n Hand</h1>
+                             <p>Your one stop craft shop. It’s all made with love.</p>
+                             <a href="#services" class="btn">Discover Our Services</a>
+                         </div>
+                     </section>
+     
+                     <section id="gallery" class="gallery py-5">
+                         <div class="container">
+                             <h2 class="text-center mb-5 animate__animated animate__fadeIn">Fantastic Gallery</h2>
+                             <div class="row">
+                                 <!-- Gallery Item 1 -->
+                                 <div class="col-lg-4 col-md-6 mb-4">
+                                     <div class="gallery-item">
+                                         <a href="images/gallery1.jpg" data-lightbox="gallery" data-title="Gallery Image 1">
+                                             <img src="images/gallery1.jpg" class="img-fluid" alt="Gallery Image 1">
+                                         </a>
+                                     </div>
+                                 </div>
+                                 <!-- Gallery Item 2 -->
+                                 <div class="col-lg-4 col-md-6 mb-4">
+                                     <div class="gallery-item">
+                                         <a href="images/gallery2.jpg" data-lightbox="gallery" data-title="Gallery Image 2">
+                                             <img src="images/gallery2.jpg" class="img-fluid" alt="Gallery Image 2">
+                                         </a>
+                                     </div>
+                                 </div>
+                                 <!-- Gallery Item 3 -->
+                                 <div class="col-lg-4 col-md-6 mb-4">
+                                     <div class="gallery-item">
+                                         <a href="images/gallery3.jpg" data-lightbox="gallery" data-title="Gallery Image 3">
+                                             <img src="images/gallery3.jpg" class="img-fluid" alt="Gallery Image 3">
+                                         </a>
+                                     </div>
+                                 </div>
+                                 <!-- Gallery Item 4 -->
+                                 <div class="col-lg-4 col-md-6 mb-4">
+                                     <div class="gallery-item">
+                                         <a href="images/gallery4.jpg" data-lightbox="gallery" data-title="Gallery Image 4">
+                                             <img src="images/gallery4.jpg" class="img-fluid" alt="Gallery Image 4">
+                                         </a>
+                                     </div>
+                                 </div>
+                                 <!-- Gallery Item 5 -->
+                                 <div class="col-lg-4 col-md-6 mb-4">
+                                     <div class="gallery-item">
+                                         <a href="images/gallery5.jpg" data-lightbox="gallery" data-title="Gallery Image 5">
+                                             <img src="images/gallery5.jpg" class="img-fluid" alt="Gallery Image 5">
+                                         </a>
+                                     </div>
+                                 </div>
+                                 <!-- Gallery Item 6 -->
+                                 <div class="col-lg-4 col-md-6 mb-4">
+                                     <div class="gallery-item">
+                                         <a href="images/gallery6.jpg" data-lightbox="gallery" data-title="Gallery Image 6">
+                                             <img src="images/gallery6.jpg" class="img-fluid" alt="Gallery Image 6">
+                                         </a>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </section>
+                     
+                     
 
-    <section class="gallery" id="gallery">
-        <div class="gallery-container">
-            <img src="1.jpg" alt="Gallery Image 1" class="slide-up">
-            <img src="4.jpg" alt="Gallery Image 2" class="slide-up">
-            <img src="3.jpg" alt="Gallery Image 3" class="slide-up">
-            <img src="5.jpg" alt="Gallery Image 3" class="slide-up">
-            <img src="6.jpg" alt="Gallery Image 3" class="slide-up">
-            <img src="7.jpg" alt="Gallery Image 3" class="slide-up">
-            <img src="8.jpg" alt="Gallery Image 3" class="slide-up">
-            <!-- Add more images as needed -->
+    <section id="products" class="products py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Our Exclusive Products</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp">
+                        <img src="prod0.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Polaroid Inspired</h5>
+                            <p class="card-text">10Pcs - ₱29.00 | 20Pcs - ₱49.00</p>
+                            <p class="card-description">with Free random stcikers.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-1s">
+                        <img src="prod1.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Random Stickers</h5>
+                            <p class="card-text">15Pcs - ₱10.00</p>
+                            <p class="card-description">Made of matte sticker paper, 150gsm.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-2s">
+                        <img src="prod2.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Music Polaroid</h5>
+                            <p class="card-text">1Pc - ₱5.00</p>
+                            <p class="card-description">Customizable with Free random stcikers.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-3s">
+                        <img src="prod3.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Film strip Inspired</h5>
+                            <p class="card-text">1Pc - ₱10.00</p>
+                            <p class="card-description">Printed Paper Film Strip</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-4s">
+                        <img src="prod4.jpg" class="card-img-top" alt="Product 5">
+                        <div class="card-body">
+                            <h5 class="card-title">2x2 | 1x1</h5>
+                            <p class="card-text">4Pcs 2x2 & 6Pcs 1x1 - ₱40.00</p>
+                            <p class="card-description">Can also be bought per piece.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-5s">
+                        <img src="prod5.jpg" class="card-img-top" alt="Product 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Wallet Size</h5>
+                            <p class="card-text">11Pcs - ₱20.00</p>
+                            <p class="card-description">High Quality</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-6s">
+                        <img src="prod6.jpg" class="card-img-top" alt="Product 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Bookmarks</h5>
+                            <p class="card-text">1 Pc - ₱10.00</p>
+                            <p class="card-description">Customizable with Free random stickers.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-7s">
+                        <img src="prod7.jpg" class="card-img-top" alt="Product 8">
+                        <div class="card-body">
+                            <h5 class="card-title">3R - A4</h5>
+                            <p class="card-text">1pc - ₱8.00 to ₱50.00</p>
+                            <p class="card-description">High Quality</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-8s">
+                        <img src="prod8.jpg" class="card-img-top" alt="Product 9">
+                        <div class="card-body">
+                            <h5 class="card-title">Invitaion Design</h5>
+                            <p class="card-text">₱200.00 to ₱250.00</p>
+                            <p class="card-description">Price depend on designs. Printing not included</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-9s">
+                        <img src="prod9.jpg" class="card-img-top" alt="Product 10">
+                        <div class="card-body">
+                            <h5 class="card-title">Simple Logo Design</h5>
+                            <p class="card-text">₱100.00 to ₱ 150.00</p>
+                            <p class="card-description">Price depend on designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card animate__animated animate__fadeInUp animate__delay-10s">
+                        <img src="prod10.jpg" class="card-img-top" alt="Product 11">
+                        <div class="card-body">
+                            <h5 class="card-title">Set</h5>
+                            <p class="card-text">₱50.00</p>
+                            <p class="card-description">Mixed of different print products.High Quality
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="feedback" id="feedback">
-        <h2 class="pop-up">Customer Feedback</h2>
-        <div class="feedback-container">
-            <div class="feedback-item">
-                
-                <div class="message-bubble">
-                    <img src="cus1.png" alt="Customer 1" class="customer-image"> <p class="pop-up">Great products and excellent customer service! Highly recommend!</p>
+    <section id="feedback" class="feedback py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Customer Feedback</h2>
+            <div class="row">
+                <!-- Feedback 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feedback-card animate__animated animate__fadeInUp">
+                        <p class="feedback-text">"Absolutely thrilled with my purchase. The quality is exceptional and the design is stunning!"</p>
+                        <p class="feedback-author">- Jane Doe</p>
+                    </div>
                 </div>
-                <p class="customer-name pop-up">- Jane Doe</p>
-            </div>
-            
-        </div>
-    </section>
-
-    <section class="products" id="products">
-        <h2 class="slide-up">Our Products & Services</h2>
-        <div class="product-container">
-            <!-- Repeat this block for each product -->
-            <div class="product-item">
-                <img src="prod0.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Polaroid Inspired</p>
-                    <p class="product-price slide-up">10Pcs - ₱29.00 <br> 20Pcs - ₱49.00</p>
-                    <p class="product-description slide-up">with Free random stcikers.</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
+                <!-- Feedback 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feedback-card animate__animated animate__fadeInUp animate__delay-1s">
+                        <p class="feedback-text">"A truly luxurious experience. The product exceeded my expectations in every way."</p>
+                        <p class="feedback-author">- John Smith</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod1.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Random Stickers</p>
-                    <p class="product-price slide-up">15Pcs - ₱10.00</p>
-                    <p class="product-description slide-up">Made of matte sticker paper, 150gsm.</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod2.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Music Polaroid</p>
-                    <p class="product-price slide-up">1Pc - ₱5.00</p>
-                    <p class="product-description slide-up">Customizable with Free random stcikers.</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod3.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Film strip Inspired</p>
-                    <p class="product-price slide-up">1Pc - ₱10.00</p>
-                    <p class="product-description slide-up">Printed Paper Film Strip</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod4.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">2x2 | 1x1</p>
-                    <p class="product-price slide-up">4Pcs 2x2 & 6Pcs 1x1 - ₱40.00</p>
-                    <p class="product-description slide-up">Can also be bought per piece.</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod5.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Wallet Size</p>
-                    <p class="product-price slide-up">11Pcs - ₱20.00</p>
-                    <p class="product-description slide-up">High Quality</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod6.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Bookmarks</p>
-                    <p class="product-price slide-up">1 Pc - ₱10.00</p>
-                    <p class="product-description slide-up">Customizable with Free random stickers.</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod7.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">3R - A4</p>
-                    <p class="product-price slide-up">1pc - ₱8.00 to ₱50.00</p>
-                    <p class="product-description slide-up">High Quality</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod8.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Invitaion Design</p>
-                    <p class="product-price slide-up">₱200.00 to ₱250.00</p>
-                    <p class="product-description slide-up">Price depend on designs. Printing not included</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod9.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Simple Logo Design</p>
-                    <p class="product-price slide-up">₱100.00 to ₱ 150.00 </p>
-                    <p class="product-description slide-up">Price depend on designs.</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-
-            <div class="product-item">
-                <img src="prod10.jpg" alt="Product 1" class="product-image">
-                <div class="product-info">
-                    <p class="product-name slide-up">Set</p>
-                    <p class="product-price slide-up">₱50.00 </p>
-                    <p class="product-description slide-up">Mixed of different print products.High Quality</p>
-                    <a href="https://web.facebook.com/messages/t/195099643690507" class="available-btn" target="_blank" rel="noopener noreferrer">Order</a>
-                </div>
-            </div>
-            <!-- Add more product items as needed -->
-        </div>
-    </section>
-    
-
-    <section class="contacts" id="contacts">
-        <div class="contact-info">
-            <div class="contact-details">
-                <h3 class="pop-up">Contact Us</h3>
-                <p>Email: <a href="mailto:eniahfronda@gmail.com" class="pop-up">eniahfronda@gmail.com</a></p>
-                <p>Phone: <a href="tel:+1234567890" class="pop-up">09310225316</a></p>
-                <p>Address: Sitio.Bakayan, Prenza Lian, Batangas</p>
-                <div class="social-media">
-                    <a href="https://web.facebook.com/profile.php?id=61554899294976" class="pop-up"><img src="fb.png" alt="Facebook"></a>
-                    <a href="#" class="pop-up"><img src="tiktok.jpg" alt="Twitter"></a>
-                    <a href="#" class="pop-up"><img src="insta.jpg" alt="Instagram"></a>
+                <!-- Feedback 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feedback-card animate__animated animate__fadeInUp animate__delay-2s">
+                        <p class="feedback-text">"The attention to detail and quality is remarkable. I will definitely be returning for more!"</p>
+                        <p class="feedback-author">- Emily Johnson</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq" id="faq">
-        <h2 class="pop-up">Frequently Asked Questions</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <p class="faq-question pop-up">How many days does the process take?</p>
-                <p class="faq-answer">3 - 5 days.</p>
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Email: <a href="mailto:eniahfronda@gmail.com">eniahfronda@gmail.com</a></p>
+                        <p>Phone:09310225316</p>
+                        <p>Address: Sitio.Bakayan, Prenza Lian, Batangas</p>
+                        <div class="social-media">
+                            <a href="https://facebook.com" class="social-icon" target="_blank"><img src="fb.png" alt="Facebook"></a>
+                            <a href="https://tiktok.com" class="social-icon" target="_blank"><img src="tiktok.jpg" alt="Twitter"></a>
+                            <a href="https://instagram.com" class="social-icon" target="_blank"><img src="insta.jpg" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <div class="faq-item">
-                <p class="faq-question pop-up">Do you offer international shipping?</p>
-                <p class="faq-answer">Yes, we ship internationally. Shipping costs and delivery times vary based on the destination.</p>
-            </div>
-            
-            <!-- Add more FAQ items as needed -->
         </div>
     </section>
 
-    <footer>
-        <p class="pop-up">&copy; 2024 Crafts 'N Hand. All rights reserved.</p>
-        <p class= "dev">Website developed by Rheyven</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Luxury Business. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
     <script src="script.js"></script>
 </body>
