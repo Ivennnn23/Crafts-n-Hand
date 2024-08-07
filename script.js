@@ -37,9 +37,74 @@ document.addEventListener('DOMContentLoaded', function () {
                         document.getElementById(`quantity-options-${productId}`).style.display = 'block';
                     }
                     
-                    
-                    
-                    
+     //                
+    
+ // Define a password for deletion (for demonstration purposes)
+ const adminPassword = 'developer123';
+
+ // Load reviews from localStorage and display them
+ function loadReviews() {
+     const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+     const reviewsList = document.getElementById('reviews-list');
+     reviewsList.innerHTML = '';
+     reviews.forEach((review, index) => {
+         const reviewItem = document.createElement('div');
+         reviewItem.className = 'review';
+         reviewItem.innerHTML = `
+             <strong>${review.name}</strong>
+             <p>${review.text}</p>
+             <button onclick="confirmDeleteReview(${index})">Delete</button>
+         `;
+         reviewsList.appendChild(reviewItem);
+     });
+ }
+
+ // Save review to localStorage
+ function saveReview(name, text) {
+     const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+     reviews.push({ name, text });
+     localStorage.setItem('reviews', JSON.stringify(reviews));
+ }
+
+ // Confirm and delete review from localStorage
+ function confirmDeleteReview(index) {
+     const password = prompt('Enter password to delete review:');
+     if (password === adminPassword) {
+         deleteReview(index);
+     } else {
+         alert('Incorrect password');
+     }
+ }
+
+ // Delete review from localStorage
+ function deleteReview(index) {
+     const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+     reviews.splice(index, 1);
+     localStorage.setItem('reviews', JSON.stringify(reviews));
+     loadReviews(); // Reload reviews to reflect changes
+ }
+
+ // Handle form submission
+ document.getElementById('review-form').addEventListener('submit', function(e) {
+     e.preventDefault();
+     const name = document.getElementById('review-name').value;
+     const review = document.getElementById('review-text').value;
+
+     // Save the review
+     saveReview(name, review);
+
+     // Display the review
+     const reviewItem = document.createElement('div');
+     reviewItem.className = 'review';
+     reviewItem.innerHTML = `<strong>${name}</strong><p>${review}</p><button onclick="confirmDeleteReview(${document.getElementById('reviews-list').children.length})">Delete</button>`;
+     document.getElementById('reviews-list').appendChild(reviewItem);
+
+     // Clear the form fields
+     document.getElementById('review-form').reset();
+ });
+
+ // Load reviews on page load
+ loadReviews(); 
                  
                  
 
