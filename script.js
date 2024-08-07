@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                      });
                      
 
-                     let currentProduct = '';
+let currentProduct = '';
 let currentDetails = '';
 
 function openMessenger() {
@@ -26,7 +26,7 @@ function openMessenger() {
     const messengerURL = `https://m.me/61554899294976?text=${encodedMessage}`;
     
     // Open the Messenger URL
-    window.open(messengerURL, '_blank');
+    window.location.href = messengerURL; // Use location.href for better support on mobile
 }
 
 function showQuantityOptions(productId, productName) {
@@ -47,3 +47,4 @@ function selectProduct(productName, details) {
     // Open Messenger with updated product details
     openMessenger();
 }
+
