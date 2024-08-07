@@ -237,6 +237,49 @@
                      .social-icon img:hover {
                          transform: scale(1.1);
                      }
+                     /* FAQ Section */
+.faq {
+    background-color: #f9f9f9; /* Light grey background for FAQ section */
+    padding: 5rem 0;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    color: #45594b; /* Consistent color with the rest of the theme */
+}
+
+.faq .accordion .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.faq .accordion .card-header {
+    background-color: #45594b;
+    color: #ffffff;
+    border-radius: 15px 15px 0 0;
+}
+
+.faq .accordion .card-header .btn-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.faq .accordion .card-body {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.faq .accordion .collapse {
+    transition: height 0.35s ease;
+}
                      
                      /* Footer */
                      .footer {
@@ -246,7 +289,16 @@
                          text-align: center;
                          padding: 10px ;
                      }
-
+                     .btn-success {
+                        background-color: #45594b;
+                        border-color: #ffffff;
+                    }
+                    
+                    .btn-success:hover {
+                        background-color: #45594b;
+                        border-color: #fcfffd;
+                    }
+                    
                      
                      /* Buttons */
                      .btn-primary {
@@ -282,9 +334,13 @@
                          }
                      }
                      /* styles.css */
-
-/* Add padding to the navbar in mobile view */
-@media (max-width: 767.98px) {
+                     @media (max-width: 768px) {
+                        .faq h2 {
+                            font-size: 2rem;
+                        }
+                    }
+                    /* Add padding to the navbar in mobile view */
+                    @media (max-width: 767.98px) {
                          .navbar {
                              padding: 10px 15px; /* Adjust padding as needed */
                          }
