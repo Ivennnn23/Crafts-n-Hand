@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
                          });
                      });
                      
-
 let currentProduct = '';
 let currentDetails = '';
 
@@ -19,14 +18,19 @@ function openMessenger() {
     // Construct your message with the current product name and details
     const message = `I would like to order: ${currentProduct}\nDetails: ${currentDetails}`;
     
-    // Encode the message
-    const encodedMessage = encodeURIComponent(message);
-    
-    // Use your Facebook Page ID here
-    const messengerURL = `https://m.me/61554899294976?text=${encodedMessage}`;
-    
-    // Open the Messenger URL
-    window.location.href = messengerURL; // Use location.href for better support on mobile
+    // Check if message is not empty before opening Messenger
+    if (currentProduct && currentDetails) {
+        // Encode the message
+        const encodedMessage = encodeURIComponent(message);
+        
+        // Use your Facebook Page ID here
+        const messengerURL = `https://m.me/61554899294976?text=${encodedMessage}`;
+        
+        // Open the Messenger URL
+        window.location.href = messengerURL; // Use location.href for better support on mobile
+    } else {
+        alert("Please select a product and provide details before sending a message.");
+    }
 }
 
 function showQuantityOptions(productId, productName) {
@@ -38,10 +42,12 @@ function showQuantityOptions(productId, productName) {
     
     // Update current product to reflect selection
     currentProduct = productName;
+    currentDetails = ''; // Clear details when a new product is selected
 }
 
 function selectProduct(productName, details) {
     // Update current details
+    currentProduct = productName;
     currentDetails = details;
     
     // Open Messenger with updated product details
