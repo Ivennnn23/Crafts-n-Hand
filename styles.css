@@ -35,6 +35,111 @@
         
                          color: #d9e2dd !important; /* Light grey for hover effect */
                      }
+/* General section styling */
+#events {
+    margin: 50px auto; /* Center the section horizontally and add vertical margin */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 100px; /* Space around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 1px 1px 16px 1px #45594b; /* Soft shadow */
+    max-width: 800px; /* Limit the width */
+}
+
+/* Heading for the section */
+#events h2 {
+    color: #45594b; /* Theme color for the heading */
+    font-family: 'Arial', sans-serif; /* Font style */
+    font-size: 2rem; /* Font size */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the text */
+}
+
+/* Styling for individual events */
+.event {
+    background-color: #fff; /* White background for events */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the event box */
+    margin-bottom: 15px; /* Space below each event */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.event:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Event title styling */
+.event h3 {
+    color: #45594b; /* Theme color for event titles */
+    font-family: 'Arial', sans-serif; /* Font style */
+    font-size: 1.5rem; /* Font size */
+    margin-bottom: 10px; /* Space below the title */
+    padding-left: 20px; /* Padding around the title text */
+}
+
+/* Event date and details styling */
+.event p {
+    color: #555; /* Medium grey color */
+    font-family: 'Arial', sans-serif; /* Font style */
+    font-size: 1rem; /* Font size */
+    line-height: 1.6; /* Line height for readability */
+    margin: 10px 0; /* Space between paragraphs */
+    padding-left: 20px; /* Padding around the paragraph text */
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+    #events {
+        padding: 15px; /* Reduce padding on smaller screens */
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    #events h2 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .event {
+        padding: 15px; /* Reduce padding inside event boxes */
+    }
+
+    .event h3 {
+        font-size: 1.25rem; /* Smaller font size for titles */
+        padding-left: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .event p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs */
+        padding-left: 20px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 480px) {
+    #events {
+        padding: 10px; /* Further reduce padding on mobile screens */
+    }
+
+    #events h2 {
+        font-size: 1.25rem; /* Even smaller font size */
+    }
+
+    .event {
+        padding: 10px; /* Reduce padding inside event boxes */
+    }
+
+    .event h3 {
+        font-size: 1.1rem; /* Smaller font size for titles */
+        padding-left: 20px; /* Further reduce padding */
+    }
+
+    .event p {
+        font-size: 0.85rem; /* Smaller font size for paragraphs */
+        padding-left: 20px; /* Further reduce padding */
+    }
+}
+
+
+
                      
                     /* Hero Section */
                     .hero {
@@ -312,6 +417,143 @@
                          background-color: #3a5a2f !important; /* Darker shade for button hover */
                      }
                      
+                     #reviews {
+                        background-color: #f9f9f9;
+                        padding: 2rem;
+                        max-width: 800px;
+                        margin: 0 auto;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    }
+                    
+                    .review-form {
+                        margin-bottom: 2rem;
+                    }
+                    
+                    #review-form input,
+                    #review-form textarea {
+                        width: 100%;
+                        padding: 0.5rem;
+                        margin-bottom: 1rem;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                    }
+                    
+                    #review-form button {
+                        padding: 0.5rem 1rem;
+                        background-color: #45594b;
+                        border: none;
+                        color: white;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    
+                    #review-form button:hover {
+                        background-color: #3a5a2f;
+                    }
+                    
+                    .review {
+                        border-bottom: 1px solid #ddd;
+                        padding: 1rem 0;
+                        position: relative;
+                    }
+                    
+                    .review strong {
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        color: #333;
+                    }
+                    
+                    .review p {
+                        margin: 0;
+                        color: #555;
+                    }
+            
+                    .review button {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        background-color: #e74c3c;
+                        border: none;
+                        color: white;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        padding: 0.2rem 0.5rem;
+                        margin: 0.5rem;
+                    }
+            
+                    .review button:hover {
+                        background-color: #c0392b;
+                    }
+                    
+                    @media (max-width: 600px) {
+                        #review-form input,
+                        #review-form textarea {
+                            font-size: 1rem;
+                        }
+                        
+                        #review-form button {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    #events {
+                        background-color: #f4f4f4;
+                        padding: 2rem;
+                    }
+                    
+                    .event {
+                        border-bottom: 1px solid #ddd;
+                        padding: 1rem 0;
+                    }
+                    
+                    .event h3 {
+                        color: #45594b;
+                    }
+                    #social-proof {
+                        padding: 20px;
+                        text-align: center;
+                    }
+                    
+                    #instagram-feed {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 10px;
+                    }
+                    
+                    .embed-wrapper {
+                        position: relative;
+                        width: 100%;
+                
+                        max-width: 500px; /* Maintain max width for large screens */
+                        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+                        overflow: hidden;
+                        background: #f3f3f3;
+                        border-radius: 8px;
+                        box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+                    }
+                    
+                    .embed-wrapper iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                    }
+                    
+                    @media (max-width: 600px) {
+                        .embed-wrapper {
+                            max-width: 100%;
+                            
+                            padding-top: 200%; /* Adjust aspect ratio for better mobile fit */
+                        }
+                    }
+                    
+                    
+                    
+                                        
                      /* Animations */
                      @keyframes fadeIn {
                          from {
@@ -347,4 +589,10 @@
                              padding: 10px 15px; /* Adjust padding as needed */
                          }
                      }
-                     
+                     @media (max-width: 768px) {
+                        .navbar {
+                            padding: 10px 15px;
+                        }
+                        /* Add other responsive styles here */
+                    }
+                    
