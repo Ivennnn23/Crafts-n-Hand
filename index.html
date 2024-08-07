@@ -115,42 +115,37 @@
         <div class="container">
             <h2 class="text-center mb-5 animate__animated animate__fadeIn">Products & Services</h2>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card product-card animate__animated animate__fadeInUp">
-                        <img src="prod0.jpg" class="card-img-top" alt="Polaroid Inspired" data-product-image="prod0.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title" data-product-name="Polaroid Inspired">Polaroid Inspired</h5>
-                            <p class="card-text" data-product-price="₱29.00">10Pcs - ₱29.00 | 20Pcs - ₱49.00</p>
-                            <p class="card-description">with Free random stickers.</p>
-                            <button class="btn btn-success order-btn" onclick="showQuantityOptions('prod0', 'Polaroid Inspired')">Order Now</button>
-                
-                            <!-- Hidden quantity selection buttons -->
-                            <div id="quantity-options-prod0" class="quantity-options" style="display: none;">
-                                <button class="btn btn-success" onclick="selectProduct('Polaroid Inspired', '10Pcs - ₱29.00')">Order 10Pcs - ₱29.00</button>
-                                <button class="btn btn-success" onclick="selectProduct('Polaroid Inspired', '20Pcs - ₱49.00')">Order 20Pcs - ₱49.00</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Additional Product Example -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card product-card animate__animated animate__fadeInUp">
-                        <img src="prod1.jpg" class="card-img-top" alt="Random Stickers" data-product-image="prod1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title" data-product-name="Random Stickers">Random Stickers</h5>
-                            <p class="card-text" data-product-price="₱10.00">15Pcs - ₱10.00 | 30Pcs - ₱18.00</p>
-                            <p class="card-description">Great for decorating and personalizing.</p>
-                            <button class="btn btn-success order-btn" onclick="showQuantityOptions('prod1', 'Random Stickers')">Order Now</button>
-                
-                            <!-- Hidden quantity selection buttons -->
-                            <div id="quantity-options-prod1" class="quantity-options" style="display: none;">
-                                <button class="btn btn-success" onclick="selectProduct('Random Stickers', '15Pcs - ₱10.00')">Order 15Pcs - ₱10.00</button>
-                                <button class="btn btn-success" onclick="selectProduct('Random Stickers', '30Pcs - ₱18.00')">Order 30Pcs - ₱18.00</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Product 1 -->
+<div class="col-lg-4 col-md-6 mb-4">
+    <div class="card product-card animate__animated animate__fadeInUp">
+        <img src="prod0.jpg" class="card-img-top" alt="Product 1" data-product-image="prod0.jpg">
+        <div class="card-body">
+            <h5 class="card-title" data-product-name="Polaroid Inspired">Polaroid Inspired</h5>
+            <p class="card-text" data-product-price="₱29.00">10Pcs - ₱29.00 | 20Pcs - ₱49.00</p>
+            <p class="card-description">with Free random stickers.</p>
+            <button class="btn btn-success order-btn" onclick="showQuantityOptions('prod0', 'Polaroid Inspired')">Order Now</button>
+
+            <!-- Hidden quantity selection buttons -->
+            <div id="quantity-options-prod0" class="quantity-options" style="display: none;">
+                <button class="btn btn-success" onclick="openMessenger('Polaroid Inspired', '10Pcs - ₱29.00')">Order 10Pcs - ₱29.00</button>
+                <button class="btn btn-success" onclick="openMessenger('Polaroid Inspired', '20Pcs - ₱49.00')">Order 20Pcs - ₱49.00</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-lg-4 col-md-6 mb-4">
+    <div class="card product-card animate__animated animate__fadeInUp animate__delay-1s">
+        <img src="prod1.jpg" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+            <h5 class="card-title">Random Stickers</h5>
+            <p class="card-text">15Pcs - ₱10.00</p>
+            <p class="card-description">Made of matte sticker paper, 150gsm.</p>
+            <button class="btn btn-success order-btn" onclick="openMessenger('Random Stickers', '15Pcs - ₱10.00')">Order Now</button>
+        </div>
+    </div>
+</div>
 
 <!-- Product 3 -->
 <div class="col-lg-4 col-md-6 mb-4">
